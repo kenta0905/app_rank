@@ -9,23 +9,132 @@
 
 .side-bar-header {
   height: 100px;
+  padding: 0 20px;
+  background-color: #fad192;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.create-ranking a {
+  font-size: 10px;
+  border: 1px solid black;
+  padding: 14px;
+  color: black;
+  text-decoration: none;
 }
 .rankings {
   background-color: #eeba6d;
   height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
 }
+
+.ranking {
+  padding: 20px 0 40px;
+}
+
+.ranking-name a {
+  text-decoration: none;
+  color: black;
+}
+
 .rank {
   background-color: #FFFFFF;
   width: calc(100vw - 350px);
 }
+
 .rank-header {
   height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
 .votes {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
 }
+
+.vote{
+  margin: 10px 0 0 0;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.vote-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.vote-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-vote{
+  margin-top: 10px;
+}
+
+.vote-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
 .form {
   background-color: #DDDDDD;
   height: 90px;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.form-input {
+  background-color: white;
+  width: 100%;
+}
+
+.form-vote {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
 }
