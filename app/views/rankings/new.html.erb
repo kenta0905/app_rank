@@ -1,0 +1,28 @@
+<div class='chat-ranking-form'>
+  <h1>新規ランキング</h1>
+  <%=form_with model: @ranking, local: true do |f|%>
+    <div class='chat-ranking-form__field'>
+      <div class='chat-ranking-form__field--left'>
+        <%= f.label :ランキング名, class: 'chat-ranking-form__label'%>
+      </div>
+      <div class='chat-ranking-form__field--right'>
+        <%= f.text_field :name, class: 'chat__ranking_name chat-ranking-form__input', placeholder: 'ランキング名を入力してください'%>
+      </div>
+    </div>
+    <div class='chat-ranking-form__field'>
+    </div>
+    <div class='chat-ranking-form__field'>
+      <div class='chat-ranking-form__field--left'>
+        <label class='chat-ranking-form__label' for='chat_ranking_メンバー'>メンバー</label>
+      </div>
+      <div class='chat-ranking-form__field--right'>
+      </div>
+    </div>
+    <div class='chat-ranking-form__field'>
+      <div class='chat-ranking-form__field--left'></div>
+      <div class='chat-ranking-form__field--right'>
+        <%= f.submit class: 'chat-ranking-form__action-btn'%>
+      </div>
+    </div>
+  <% end %>
+</div>
