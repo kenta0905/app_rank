@@ -41,7 +41,7 @@ Things you may want to cover:
 # rankings テーブル
 | Column     | Type          | Options     |
 | ---------- | ------------- | ----------- |
-| category   | string        |             |
+| category   | string        | null: false |
 | title      | string        | null: false |
 | choice     | string        | null: false |
 
