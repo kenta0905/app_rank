@@ -41,9 +41,13 @@ Things you may want to cover:
 # rankings テーブル
 | Column     | Type          | Options     |
 | ---------- | ------------- | ----------- |
-| category   | string        | null: false |
 | title      | string        | null: false |
-| choice     | string        | null: false |
+| category   | string        | null: false |
+| choice_a   | string        | null: false |
+| choice_b   | string        | null: false |
+| choice_c   | string        | null: false |
+| choice_d   | string        | null: false |
+| choice_e   | string        | null: false |
 
 ### Association
 - has_many :ranking_users

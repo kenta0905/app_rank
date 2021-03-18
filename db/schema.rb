@@ -24,7 +24,11 @@ ActiveRecord::Schema.define(version: 2021_03_17_071052) do
   create_table "rankings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "category", null: false
     t.string "title", null: false
-    t.string "choice", null: false
+    t.string "choice_a", null: false
+    t.string "choice_b", null: false
+    t.string "choice_c", null: false
+    t.string "choice_d", null: false
+    t.string "choice_e", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
