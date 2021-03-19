@@ -3,19 +3,18 @@
  <%= link_to current_user.nickname, edit_user_path(current_user) %>
   </div>
   <div class="create-ranking">
-    <a href="#">ランキングを作成する</a>
+  <%= link_to "ランキングを作成する", new_ranking_path %>
   </div>
 </div>
 
 <div class="rankings">
- <div class="ranking">
-    <div class="ranking-name">
-      <a href="#">room1</a>
+  <% current_user.rankings.each do |ranking| %>
+    <div class="ranking">
+      <div class="ranking-name">
+        <a href="#"><%= ranking.title %></a>
+      </div>
     </div>
-  </div>
-  <div class="ranking">
-    <div class="ranking-name">
-      <a href="#">room2</a>
-    </div>
-  </div>
+  <% end %>
 </div>
+
+<%# link_to ranking.title, ranking_votes_path(ranking) %> 
