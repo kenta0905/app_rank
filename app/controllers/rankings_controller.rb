@@ -4,9 +4,9 @@ class RankingsController < ApplicationController
     @ranking = Ranking.new
   end
 
-  # def index
+  def index
   #   @ranking = Ranking.all
-  # end
+  end
 
   def create
     @ranking = Ranking.new(ranking_params)
